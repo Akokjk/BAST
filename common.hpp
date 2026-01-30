@@ -25,6 +25,7 @@ enum class State { Global, Menu, Buy, Sell, Auction,  Trade };
 #include <optional>
 #include <any>
 #include <random>
+#include <sstream>
 
 
 #include "game.hpp"

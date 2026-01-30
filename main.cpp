@@ -11,7 +11,7 @@ int main() {
         game.events(); 
         game.update(dt);
         // Render logic
-        game.window.clear(sf::Color::Black);
+        game.window.clear(sf::Color({36, 42, 51, 255}));
         
         game.drawAll(); 
         game.window.display();

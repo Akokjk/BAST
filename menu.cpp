@@ -5,7 +5,7 @@ void Loaders::loadMenu(Game& game) {
    
 
     // 2. Create a text object
-    sf::Text text(game.roboto_font);
+    sf::Text text(game.roboto_font, "test");
     text.setString("Buy Auction Sell Trade");
     text.setCharacterSize(20); // in pixels
     text.setFillColor(sf::Color::White);

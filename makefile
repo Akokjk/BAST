@@ -30,7 +30,7 @@ LIBS = -lsfml-graphics-s \
 # --- Build Targets ---
 SRC = main.cpp game.cpp menu.cpp buy.cpp card.cpp
 OBJ = $(SRC:.cpp=.o)
-EXE = app.exe
+EXE = app
 
 all: $(EXE)
 
@@ -42,3 +42,9 @@ $(EXE): $(OBJ)
 
 clean:
 	del /f $(OBJ) $(EXE)
+
+mac: 
+	clang++ -std=c++17 $(SRC) -o $(EXE)  \
+	-I/opt/homebrew/include \
+	-L/opt/homebrew/lib \
+	 -lsfml-graphics -lsfml-window -lsfml-system
