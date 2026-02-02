@@ -38,4 +38,9 @@ enum class State { Global, Menu, Buy, Sell, Auction,  Trade };
 #include "card.hpp"
 
 
+
+
+
+
+
 #endif

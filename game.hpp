@@ -3,6 +3,9 @@
 
 #include "common.hpp"
 
+
+
+
 class Game {
 private:
    
@@ -18,6 +21,7 @@ private:
     std::vector<std::string> drawOrder;
 
 public:
+    sf::RenderTexture cardCanvas;
     float fTheta = cardRotation * 3.14159f / 180.0f;
      unsigned int width, height;
     std::unordered_map<std::string, std::unique_ptr<sf::Texture>> textures;

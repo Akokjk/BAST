@@ -1,0 +1,23 @@
+# --- Compiled Binaries ---
+*.o
+*.obj
+app
+app.exe
+*.out
+*.app
+
+# --- IDE & Build Folders ---
+.vscode/
+.idea/
+build/
+bin/
+obj/
+
+# --- SFML / System specific ---
+*.pdb
+*.ilk
+*.suo
+
+# --- Assets (Optional) ---
+# Uncomment the line below if you don't want to push your Resources folder
+# Resources/
