@@ -8,6 +8,8 @@ public:
 	//create a random card 
 	//create a specific card 
 	void create(Game& game); 
+	//rastering engine for 3d cards 
+	
 
 private:
 	sf::Vector2f location;

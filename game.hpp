@@ -5,7 +5,7 @@
 
 class Game {
 private:
-    unsigned int width, height;
+   
     State currentState = State::Menu;
 
     struct RegistryItem {
@@ -14,10 +14,12 @@ private:
     };
 
     std::unordered_map<std::string, RegistryItem> objects;
-   
+    float cardRotation = 0.0f;
     std::vector<std::string> drawOrder;
 
 public:
+    float fTheta = cardRotation * 3.14159f / 180.0f;
+     unsigned int width, height;
     std::unordered_map<std::string, std::unique_ptr<sf::Texture>> textures;
     Game(int w, int h, const std::string& title);
     sf::RenderWindow window;
@@ -31,6 +33,7 @@ public:
         } else {
             throw std::runtime_error("Failed to load texture: " + path);
         }
+        
     }
     // Creation: Stores the object and its state
     template <typename T>

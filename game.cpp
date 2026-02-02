@@ -35,6 +35,9 @@ void Game::drawAll() {
         else if (type == typeid(sf::CircleShape)) {
             window.draw(std::any_cast<sf::CircleShape&>(item.object));
         }
+        else if (type == typeid(sf::VertexArray)) {
+            window.draw(std::any_cast<sf::VertexArray&>(item.object));
+        }
         // If it's a Card object or a Vector2f, this loop just skips it!
     }
 }
@@ -47,11 +50,18 @@ void Game::update(float dt) {
     } catch (...) {
         // If "Title" doesn't exist, just keep going
     }
-
+    cardRotation = cardRotation + 10.0f * dt;
+    // 2. Keep the angle within 0-360 range for precision
+    if (cardRotation >= 360.0f) {
+        cardRotation -= 360.0f;
+    }
+    fTheta = cardRotation ;
+    Loaders::loadBuy(*this);
     // 2. Example: Logic based on Data
     // If you stored a "isHovered" boolean for a card:
     // bool hovered = getData<bool>("Card_Hovered");
     // if (hovered) { ... scale up the sprite ... }
+    //push("dtCheck", sf::Text(roboto_font, std::to_string(fTheta), 30), State::Buy);
 }
 
 void Game::events(){

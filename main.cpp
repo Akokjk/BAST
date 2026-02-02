@@ -15,6 +15,7 @@ int main() {
         
         game.drawAll(); 
         game.window.display();
+
     }
 
     return 0;

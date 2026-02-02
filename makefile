@@ -4,7 +4,7 @@ INCLUDE_DIR = $(SFML_DIR)/include
 LIB_DIR = $(SFML_DIR)/build/lib
 
 # --- Compiler Settings ---
-CXX = g++
+CXX = g++ -g
 CXXFLAGS = -I$(INCLUDE_DIR) -DSFML_STATIC -std=c++17 -Wall -Wextra
 
 # --- Linker Settings ---

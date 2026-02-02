@@ -8,6 +8,9 @@
 
 enum class State { Global, Menu, Buy, Sell, Auction,  Trade };
 
+#define PI 3.14159265
+
+
 
 // 2. SFML 3 Includes
 #include <SFML/Graphics.hpp>
@@ -24,12 +27,15 @@ enum class State { Global, Menu, Buy, Sell, Auction,  Trade };
 #include <unordered_map>
 #include <optional>
 #include <any>
+#include <algorithm>
 #include <random>
+#include <math.h>
 #include <sstream>
 
 
 #include "game.hpp"
 #include "state_loader.hpp"
 #include "card.hpp"
+
 
 #endif
