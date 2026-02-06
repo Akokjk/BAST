@@ -27,6 +27,7 @@ public:
     std::unordered_map<std::string, std::unique_ptr<sf::Texture>> textures;
     Game(int w, int h, const std::string& title);
     sf::RenderWindow window;
+    sf::RenderWindow glWindow; 
     sf::Font roboto_font; 
     // Helper function to get a texture safely
     void loadTexture(const std::string& name, const std::string& path) {

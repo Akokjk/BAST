@@ -13,6 +13,7 @@ void Loaders::loadMenu(Game& game) {
     text.setPosition({50.f, 50.f});
 
     game.push("title", text, State::Menu);   
+    
 }
 
 

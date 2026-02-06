@@ -130,13 +130,13 @@ void Card::create(Game& game){
    
 
 	//make a function to push all these 
-	// game.push("Dev_Card", card, State::Buy);
-	// game.push("Dev_Card_Inner_Picture", inner_picture, State::Buy); 
-	// game.push("Dev_Card_Header", header, State::Buy); 
-	// //game.push("Hornk_u_mother_trucker", desc_box, State::Buy); 
-	// game.push("Hornk_u_mother_trucker1", desc_text, State::Buy); 
-	// game.push("Hornk_u_mother_trucker2", btm_logo, State::Buy); 
-	// game.push("Hornk_u_mother_trucker3", card_pic, State::Buy); 
+	game.push("Dev_Card", card, State::Buy);
+	game.push("Dev_Card_Inner_Picture", inner_picture, State::Buy); 
+	game.push("Dev_Card_Header", header, State::Buy); 
+	//game.push("Hornk_u_mother_trucker", desc_box, State::Buy); 
+	game.push("Hornk_u_mother_trucker1", desc_text, State::Buy); 
+	game.push("Hornk_u_mother_trucker2", btm_logo, State::Buy); 
+	game.push("Hornk_u_mother_trucker3", card_pic, State::Buy); 
 
 
 
